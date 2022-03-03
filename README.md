@@ -7,7 +7,7 @@ npm install
 npm run serve
 ```
 
-### TODO
+## TODO
 - home page
 - image gallery
 

@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <img :src="img" alt="" />
-
-  </div>
+    <div>
+        <img :src="img" alt="" />
+    </div>
 </template>
 
 <script>
 export default {
-  props: ["img"],
+    props: ["img"],
 };
 </script>
 
 <style scoped>
-img{
+img {
     width: 30em;
     padding: 2em;
 }

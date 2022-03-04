@@ -1,61 +1,67 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
     {
-        path: '/',
-        name: 'HomeLayout',
+        path: "/",
+        name: "HomeLayout",
         component: () =>
-            import(/* webpackChunkName: "homeLayout" */ '../layouts/HomeLayout.vue'),
+            import(
+                /* webpackChunkName: "homeLayout" */ "../layouts/HomeLayout.vue"
+            ),
         children: [
             {
-                path: '/Gallery',
-                name: 'Gallery',
+                path: "/Gallery",
+                name: "Gallery",
                 meta: {
-                    title:'Gallery',
-                    breadcrumb:[
+                    title: "Gallery",
+                    breadcrumb: [
                         {
-                            name:'Gallery'
-                        }
+                            name: "Gallery",
+                        },
                     ],
                 },
                 component: () =>
-                    import(/* webpackChunkName: "gallery" */ '../views/Gallery.vue'),
+                    import(
+                        /* webpackChunkName: "gallery" */ "../views/Gallery.vue"
+                    ),
             },
             {
-                path: '/About',
-                name: 'About',
+                path: "/About",
+                name: "About",
                 meta: {
-                    title:'About',
-                    breadcrumb:[
+                    title: "About",
+                    breadcrumb: [
                         {
-                            name:'About'
-                        }
+                            name: "About",
+                        },
                     ],
                 },
                 component: () =>
-                    import(/* webpackChunkName: "about" */ '../views/About.vue'),
+                    import(
+                        /* webpackChunkName: "about" */ "../views/About.vue"
+                    ),
             },
             {
-                path: '/Home',
-                name: 'Home',
+                path: "/Home",
+                name: "Home",
                 meta: {
-                    title:'Home',
-                    breadcrumb:[
+                    title: "Home",
+                    breadcrumb: [
                         {
-                            name:'Home'
-                        }
+                            name: "Home",
+                        },
                     ],
                 },
                 component: () =>
-                    import(/* webpackChunkName: "home" */ '../views/Home.vue'),
-            }
-        ]
+                    import(/* webpackChunkName: "home" */ "../views/Home.vue"),
+            },
+        ],
     },
-]
+];
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes,
-})
+});
 
-export default router
+export default router;

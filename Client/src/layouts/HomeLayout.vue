@@ -1,10 +1,9 @@
 <template>
-    <div>
-
-        <div class="content">
-            <router-view />
-        </div>
+  <div>
+    <div class="content">
+      <router-view />
     </div>
+  </div>
 </template>
 
 <script>
@@ -15,9 +14,10 @@ export default {};
 
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #dfdfdf;
 }
 </style>
